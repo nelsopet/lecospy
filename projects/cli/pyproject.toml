@@ -1,0 +1,21 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+name = "lecospec-cli"
+version = "0.0.1"
+description = "Core Functionality and Types shared across domains for Lecospec"
+authors = [ "krbundy <kenneth.bundy@maine.edu>", ]
+packages = [
+  { include = "lecospec-core" }
+]
+
+
+
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+typer = "*"
+pydantic = "^2.10.3"
